@@ -1,2 +1,2 @@
 on init
-    export LD_SHIM_LIBS /system/lib/libril.so|ril_shim.so
+    export LD_SHIM_LIBS /system/lib/libril.so|ril_shim.so:/system/vendor/lib/libwvm.so|libshim_wvm.so

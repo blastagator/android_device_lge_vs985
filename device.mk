@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ril_shim
 
+# Widevine
+PRODUCT_PACKAGES += \
+    libshim_wvm
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_g3
