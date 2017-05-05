@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
     init.galbi.bt.sh \
     init.galbi.bt_vendor.rc
 
+# ims
+PRODUCT_PROPERTY_OVERRIDES += \
+    telephony.lteOnCdmaDevice=1
+
 # RIL
 PRODUCT_PACKAGES += \
     init.target.rc \
@@ -48,6 +52,10 @@ PRODUCT_PACKAGES += \
 # Widevine
 PRODUCT_PACKAGES += \
     libshim_wvm
+
+# ims shim
+PRODUCT_PACKAGES += \
+    libshim_boringssl
 
 # Recovery
 PRODUCT_PACKAGES += \
