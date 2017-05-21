@@ -29,7 +29,11 @@ BLUETOOTH_HCI_USE_MCT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/vs985/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_vs985_defconfig
+ifeq ($(WITH_TWRP),true)
+    TARGET_KERNEL_CONFIG := twrp_vs985_defconfig
+else
+    TARGET_KERNEL_CONFIG := lineageos_vs985_defconfig
+endif
 TARGET_REQUIRES_BUMP := true
 
 # NFC
